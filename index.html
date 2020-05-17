@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="app">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AngularJS Http Post APP</title>
+
+    <!-- WEBAPP STYLES -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/media.css" />
+</head>
+
+<!-- WEBAPP NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" ng-controller="NavController">
+    <a class="navbar-brand" href="#">{{title}}</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Empty menu 1 <span class="sr-only"></span
+          ></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Empty menu 2 <span class="sr-only"></span
+          ></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div ng-view></div>
+
+<body>
+    <!-- WEBAPP SCRIPTS -->
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Angular -->
+    <script src="/node_modules/angular/angular.min.js"></script>
+    <script src="/node_modules/angular-route/angular-route.min.js"></script>
+    <!-- App -->
+    <script src="/app/app.js"></script>
+    <script src="/app/app.nav.controller.js"></script>
+    <!-- Modules declarations -->
+    <script src="/app/modules/router/router.config.js"></script>
+    <!------------ Module.Home -->
+    <script src="/app/modules/home/controllers/home.controller.js"></script>
+    <script src="/app/modules/home/services/home.service.js"></script>
+
+</body>
+
+</html>
